@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        CA2
+        Author: Isaac Peh
+        Date: 6 August 2021
+
+        Filename: bootstrap_current_experience.html
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Singapore Polytechnic, SP, SP experience, SP enrollment" />
+    <!--keywords for search engine-->
+    <title>Experience SP</title>
+    <link href="../bootstrap_css/bootstrap_layout.css" rel="stylesheet" />
+    <link href="../bootstrap_css/bootstrap_current.css" rel="stylesheet" />
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-900.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-800.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-regular.woff2" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper/min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap_animation.js"></script>
+
+        <!-- navigation bar -->
+
+        <div class="navbar-inner">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <span onclick="transitionToPage('index.html')"><a href="bootstrap_index.html" class="navbar-brand"><img
+                            id="navbar-logo" src="../img/logo.png" alt=""></a></span>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"><img id="toggleimg" src="../img/toggle.png" alt=""></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_index.html')"
+                                id="navHome">Home</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_current_experience.html')"
+                                id="navCurrent">SP Experience</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_course_details.html')"
+                                id="navCareer">Course
+                                Details</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_past_experience.html')"
+                                id="navPast">Past
+                                Experience</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_feedback.html')"
+                                id="navFeedback">Feedback</span></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- header title -->
+
+        <div class="row no-gutters">
+            <div class="col">
+                <div id="bgheader">
+                    <h1>SP Experiences</h1>
+                    <label>Just a little taste of Singapore Polytechnic</label>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- intro -->
+
+    <div class="container-fluid p-0" id="intro">
+        <div class="row no-gutters">
+            <div class="col-lg-5 my-auto">
+                <img class="img-fluid" src="../img/wordart.png" alt="">
+                <!-- source : https://wordart.com/ -->
+            </div>
+            <div class="col-lg-7 p-2 my-auto">
+                <label><br><a>Singapore's First & Leading Polytechnic</a><br><br>
+                    Broaden your horizons with SP as you go through your learning journey at Singapore's first
+                    polytechnic
+                    established in 1954. With a variety of Diploma courses and over 100 CCAs, there is a place for
+                    everyone in
+                    SP. <br><br>Not to mention, SP could be your stepping stone into Universities all around the world
+                    as it is
+                    recognised internationally. Located conveniently beside Dover MRT station, SP also boasts a whole
+                    lot of
+                    facilities and amenities for its students. <br><br>Carry on exploring this section to find out
+                    more.</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- fixed background -->
+
+    <div class="img-fluid" id="bg">
+    </div>
+
+    <!-- school of computing -->
+
+    <div class="container-fluid" id="socex">
+        <div class="row no-gutters">
+            <div class="col-lg-12 my-auto">
+                <label>School Of Computing</label>
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col-lg-4 my-auto">
+                <iframe src="https://www.youtube.com/embed/D-3RwmAAwj8" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <!-- source :  https://www.youtube.com/watch?v=D-3RwmAAwj8&ab_channel=SingaporePolytechnic -->
+            </div>
+            <div class="col-lg-7 my-auto socex">
+                <p>Technology is everywhere, more so in SP's School of Computing (SOC). You'll be amazed by the amount
+                    of
+                    knowledge there is in SOC. Learn not just from your tutors and lecturers, but also your classmates!
+                    Make
+                    the
+                    most out of your laptop here as you go through various computing modules. <br><br>I've only been
+                    through
+                    my
+                    first semester and I have already learnt how to build websites and applications. You can only
+                    imagine
+                    how
+                    much more there is to accomplish. The tech journey has been eye-opening so far for me, and I am sure
+                    SOC
+                    will have plenty in store for you!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- grid -->
+
+    <div class="container" id="gridcaption">
+        <label>Explore my experiences!</label>
+        <label id="subcaption">(hover over images)</label>
+    </div>
+
+    <div class="mx-auto" id="divtable" style="max-width: 62%;">
+
+        <!-- grid row 1 -->
+
+        <div class="container-fluid">
+            <div class="row" id="gridtable">
+                <div class="col-xl-4 col-lg-6 col-s-12 newcol">
+                    <div class="col-12 flavour" id="flavours1">
+                        <p>Enjoy plenty of food options from Singapore Polytechnic's 6 food courts and more!</p>
+                        <p>Be spoilt for choice - from Western and Taiwanese cuisine to even your favourite fast food.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-s-12 newcol">
+                    <div class="col-12 gridtitle flavour" id="flavours2">FLAVOURS
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-s-12 newcol">
+                    <div class="col-12 flavour" id="flavours3">
+                        <p>Here are some of my personal favourites:</p>
+                        <label>Mini Wok @ FC3</label><br>
+                        <label>Chicken Rice @ FC6</label><br>
+                        <label>Pasta @ Manna</label><br>
+                        <label>Ayam Penyet @ FC2</label><br>
+                        <label>McDonalds (FYI: it's cheaper!)</label>
+                    </div>
+                </div>
+
+                <!-- grid row 2 -->
+
+                <div class="col-xl-4 col-lg-6 col-s-12 newcol">
+                    <div class="col-12 friend" id="friends1">
+                        <p>Enjoy plenty of food options from Singapore Polytechnic's 6 food courts and more!</p>
+                        <p>Be spoilt for choice - from Western and Taiwanese cuisine to even your favourite fast food.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-s-12 newcol">
+                    <div class="col-12 gridtitle friend" id="friends2">FRIENDS
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-s-12 newcol">
+                    <div class="col-12 friend" id="friends3">
+                        <p>Make the best of your school life by meeting new people and making lifelong friends in SP.
+                        </p>
+                        <p>There is a whole lot of opportunities in SP for you to meet schoolmates of all walks of life.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- grid row 3 -->
+
+                <div class="col-xl-4 col-lg-6 col-s-12 newcol">
+                    <div class="col-12 fun" id="fun1">
+                        <p>Work hard and play hard in SP with over 100 CCAs to choose from. From sports to interest
+                            clubs,
+                            there will be something for you.</p>
+                        <p>Your CCA will also serve as an awesome platform for you to showcase your talents in different
+                            ways.</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-s-12 newcol">
+                    <div class="col-12 gridtitle fun" id="fun2">FUN
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-s-12 newcol">
+                    <div class="col-12 fun" id="fun3">
+                        <p>With photogenic spots all over SP, be sure to snap pictures with your friends to document
+                            your SP
+                            experience.</p>
+                        <p>Photographs will surely capture your SP memories - what makes it better is the beautiful
+                            backdrop
+                            of SP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="row no-gutters" id="footer">
+        <div class="col-lg-12 my-auto"><a>CONTACTS</a><br><br>
+            <label>Singapore Polytechnic, 500 Dover Road, Singapore</label><br>
+            <label>contactus@sp.edu.sg &nbsp; &nbsp; (+65)6775 1133</label><br>
+            <a href="https://www.facebook.com/singaporepolytechnic/" target="_blank"><img src="../img/facebook.png"
+                    alt=""></a>
+            <!-- source : https://www.flaticon.com/ -->
+            <a href="https://twitter.com/SingaporePoly?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank"><img src="../img/twitter.png" alt=""></a>
+            <!-- source : https://www.flaticon.com/ -->
+            <a href="https://www.instagram.com/singaporepoly/?hl=en" target="_blank"><img src="../img/instagram.png"
+                    alt=""></a><br>
+            <!-- source : https://www.flaticon.com/ -->
+            <label id="arr">@ ALL RIGHTS RESERVED &nbsp; | &nbsp; THE SP EXPERIENCE &nbsp; | &nbsp; SINGAPORE
+                POLYTECHNIC</label>
+        </div>
+    </div>
+</body>
+
+</html>

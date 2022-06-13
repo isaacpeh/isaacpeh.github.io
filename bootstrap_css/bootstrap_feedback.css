@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+/* 
+CA2
+Author: Isaac Peh
+Date: 6 August 2021
+
+Filename: bootstrap_feedback.css 
+*/
+
+/* navigation */
+
+#navFeedback {
+    color: white !important;
+    background-color: crimson;
+    border: crimson solid 1px;
+}
+
+#navHome:hover, #navCareer:hover, #navPast:hover, #navCurrent:hover {
+    color: red !important;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+/* contact us */
+
+.info {
+    background-image: url(../img/feedbackbg1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+    box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
+}
+
+#title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 8px;
+    text-align: left;
+    margin-left: 12.4%;
+    margin-top: 5%;
+}
+
+#title h1 {
+    font-size: 48px;
+}
+
+#title p {
+    font-family: arial;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#title label {
+    color: rgb(88, 88, 88);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* call email */
+
+.box {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    max-width: 80%;
+    padding-left: 36px;
+}
+
+.box img {
+    width: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#call, #email {
+    max-width: 46%;
+    background-color: white;
+    box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.1);
+    margin-right: 30px;
+}
+
+#call p, #email p {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+#call label, #email label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.info a {
+    /* buttons */
+    display: inline-block;
+    text-decoration: none !important;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: ease 0.3s;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.info a:hover {
+    color: white;
+    background-color: crimson;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+/* maps */
+
+#maps {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 10%;
+}
+
+#maps h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#maps p {
+    font-family: arial;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-top: 80px;
+}
+
+#maps label {
+    color: rgb(255, 144, 144);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#maps iframe {
+    width: 86%;
+    height: 400px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+/* feedback container */
+
+#form {
+    background-image: url(../img/feedbackbg2.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    margin-top: 120px;
+    padding-bottom: 80px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: left;
+}
+
+#form img {
+    width: 76%;
+    margin-left: 120px;
+    margin-top: 80px;
+}
+
+#form p {
+    font-family: arial;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#form h1{
+    width: 80%;
+    margin-bottom: 30px;
+    font-size:46px;
+}
+
+/* feedback form */
+
+#formdiv {
+    padding-left: 70px;
+}
+
+.formcontent {
+    max-width: 76%;
+    font-size: 16px;
+}
+
+.formcontent input:placeholder-shown{
+    font-size: 12px;
+}
+
+#name, #email2, #code, #phone, #age, #feedback {
+    padding: 22px 18px;
+    border-radius: 30px;
+    border: gray solid 1px;
+    resize: none;
+    transition: ease 0.3s;
+}
+
+.email{
+    margin-bottom: 20px;
+}
+
+#countrycode{
+    padding-top: 11px;
+}
+
+#code{
+    padding: 12px 10px;
+    margin: 0px 20px;
+    min-width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#phone {
+    float: right;
+    width: 90%;
+}
+
+#name, #email2, #feedback {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#feedback {
+    border-radius: 20px;
+    padding: 10px 16px;
+    margin-bottom: 0px;
+}
+
+#age {
+    display: inline-block;
+    min-width: 70px;
+    max-width: 70px;
+    margin-bottom: 18px;
+    margin-top: 16px;
+}
+
+#gender {
+    margin-right: 40px;
+}
+
+#genderrow{
+    margin-top:47px;
+}
+
+#agerow{
+    margin-top: 20px;
+}
+
+#male{
+    margin-right: 5px;
+}
+
+#female {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+#lblage {
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+#response {
+    margin-left: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#lblresponse {
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#clear, #submit {
+    /* form buttons */
+    color: white;
+    padding: 7px;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 96%;
+    font-size: 16px;
+    background-color: black;
+    transition: ease 0.3s;
+}
+
+#submit {
+    float: right;
+}
+
+#clear:hover, #submit:hover {
+    background-color: crimson;
+    transform: translateY(-3px);
+    box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+#clear:active, #submit:active {
+    color: black;
+    transition: ease 0.0s;
+    transform: translateY(-2px);
+}
+
+#name:focus, #email2:focus, #phone:focus, #feedback:focus, #age:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: rgb(255, 144, 144) 1px solid;
+    transform: scale(1.05);
+}
+
+#code:focus{
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#name:hover, #email2:hover, #phone:hover, #feedback:hover, #age:hover {
+    border: rgb(255, 107, 107) 1px solid;
+}
+
+@media only screen and (max-width: 992px) {
+    #title {
+        margin: 60px 0px;
+        text-align: center;
+    }
+    #title h1 {
+        font-size: 38px;
+    }
+    .box {
+        margin: 0px;
+        padding: 0px;
+    }
+    #call {
+        max-width: 80%;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #email {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #maps {
+        text-align: center;
+        margin-top: 0px;
+    }
+    #maps h1 {
+        font-size: 38px;
+    }
+    #maps label {
+        margin-bottom: 60px;
+    }
+    #maps iframe {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #phone{
+        width: 100%;
+    }
+    #agerow{
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .formcontent{
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #formdiv p {
+        text-align: center;
+    }
+    #formdiv {
+        margin: 0;
+        padding-left: 0px;
+    }
+    #formdiv h1 {
+        text-align: center;
+        margin:0px;
+        margin-bottom: 30px;
+        width: 100%;
+        font-size: 34px;
+    }
+    #form img {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+        min-width: 400px;
+        margin-bottom: 40px;
+    }
+}

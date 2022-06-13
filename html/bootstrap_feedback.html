@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        CA2
+        Author: Isaac Peh
+        Date: 6 August 2021
+
+        Filename: bootstrap_feedback.html
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Singapore Polytechnic, SP, SP experience, SP enrollment" />
+    <!--keywords for search engine-->
+    <title>Experience SP</title>
+    <link href="../bootstrap_css/bootstrap_layout.css" rel="stylesheet" />
+    <link href="../bootstrap_css/bootstrap_feedback.css" rel="stylesheet" />
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-900.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-800.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-regular.woff2" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper/min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap_animation.js"></script>
+
+        <!-- navigation bar -->
+
+        <div class="navbar-inner">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <span onclick="transitionToPage('index.html')"><a href="bootstrap_index.html" class="navbar-brand"><img
+                            id="navbar-logo" src="../img/logo.png" alt=""></a></span>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"><img id="toggleimg" src="../img/toggle.png" alt=""></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_index.html')"
+                                id="navHome">Home</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_current_experience.html')"
+                                id="navCurrent">SP Experience</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_course_details.html')"
+                                id="navCareer">Course
+                                Details</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_past_experience.html')"
+                                id="navPast">Past
+                                Experience</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_feedback.html')"
+                                id="navFeedback">Feedback</span></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- header title -->
+
+        <div class="row no-gutters">
+            <div class="col">
+                <div id="bgheader">
+                    <h1>Feedback</h1>
+                    <label>Let's get in touch</label>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- contact us -->
+
+    <div class="info">
+        <div id="title">
+            <p>We're here to help</p><br>
+            <h1><b>Contact Us</b></h1><br><label>Have a question? Reach out through one of the options below <br>and
+                we'll be
+                in touch soon.</label>
+        </div>
+        <div class="row no-gutters box mx-auto">
+            <div class="col-lg-6" id="call">
+                <img src="../img/phone.png" alt=""><br>
+                <!-- source : https://www.flaticon.com/ -->
+                <p>Phone</p>
+                <label>For any enquires regarding Singapore Polytechnic.</label><br>
+                <a href="tel:+6567751133">Call Us</a>
+            </div>
+            <div class="col-lg-6" id="email">
+                <img src="../img/email.png" alt=""><br>
+                <!-- source : https://www.flaticon.com/ -->
+                <p>Email</p>
+                <label>For international students looking to study in Singapore.</label><br>
+                <a href="mailto:contactus@sp.edu.sg">Email Us</a>
+            </div>
+        </div>
+
+        <!-- locate us -->
+
+        <div class="row no-gutters box mx-auto" id="maps">
+            <div class="col-lg-5">
+                <br>
+                <p>Locate Us</p>
+                <h1><b>Singapore<br>Polytechnic</b></h1><label>500 Dover Road<br>
+                    Singapore 139651</label>
+            </div>
+            <div class="col-lg-7 my-auto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.775876175282!2d103.77536081460582!3d1.3097756990447091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a602ff17c15%3A0xa9545dd23993859e!2sSingapore%20Polytechnic!5e0!3m2!1sen!2ssg!4v1622905860698!5m2!1sen!2ssg"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- form -->
+
+    <div class="row no-gutters" id="form">
+        <div class="col-xl-6 col-lg-12">
+            <img id="img" src="../img/feedbackform.png" alt="" />
+            <!-- source : https://www.freepik.com/ -->
+        </div>
+        <div class="col-xl-6 mx-auto" id="formdiv">
+            <p>We would love to hear from you</p>
+            <h1><b>Send us your feedback!</b></h1>
+            <form onsubmit="alert('Thank you for your feedback.'); this.reset(); return false">
+                <div class="form-group formcontent">
+                    <div class="row no-gutters">
+
+                        <!-- name -->
+
+                        <div class="col-12"><label>Name</label></div>
+                        <div class="col-12"><input class="form-control" name="fname" id="name" type="text"
+                                placeholder="Name" required></div>
+
+                        <!-- email -->
+
+                        <div class="col-12"><label>Email</label></div>
+                        <div class="col-12 email"><input class="form-control" name="femail" id="email2" type="email"
+                                placeholder="Email" required></div>
+
+                        <!-- number -->
+
+                        <div class="col-lg-3"><label class="text-nowrap" id="countrycode">Country Code:</label></div>
+                        <div class="col-3 text-xl-right"><select class="form-select" name="fcode" id="code">
+                                <option>+65</option>
+                                <option>+62</option>
+                                <option>+63</option>
+                                <option>+66</option>
+                                <option>+84</option>
+                            </select></div>
+                        <div class="col-lg-6 col-9"><input class="form-control" name="fphone" id="phone" type="tel"
+                                placeholder="Number (minimum 8 digits)"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '');" pattern=".{8,}" required>
+                        </div>
+
+                        <!-- gender -->
+
+                        <div class="col-xl-8 col-lg-6" id="genderrow"><label class="text-nowrap"
+                                id="gender">Gender:</label>
+                            <input name="fgender" id="male" type="radio" value="Male" checked="checked"><label
+                                for="male">Male</label>
+                            <input name="fgender" id="female" type="radio" value="Female"><label
+                                for="female">Female</label>
+                        </div>
+
+                        <!-- age -->
+
+                        <div class="col-xl-4 col-lg-6 text-lg-right" id="agerow"><label id="lblage">Age: </label>
+                            <input class="form-control" type="number" name="fage" id="age" min="1" max="99" step="1"
+                                value="18" required>
+                        </div>
+
+                        <!-- feedback -->
+
+                        <div class="col-12"><label>Your Feedback:</label></div>
+                        <div class="col-12"><textarea class="form-control" name="ffeedback" id="feedback" rows="3"
+                                required></textarea></div>
+
+                        <div class="col-12"><input class="form-check-input" type="checkbox" name="fresponse"
+                                id="response"><label class="form-check-label" for="response" id="lblresponse">Check this
+                                box if you require a response.</label></div>
+
+                        <!-- buttons -->
+
+                        <div class="col-6"><input type="reset" name="fclear" id="clear" value="Clear"></div>
+                        <div class="col-6"><input type="submit" name="fsubmit" id="submit" value="Submit"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="row no-gutters" id="footer">
+        <div class="col-lg-12 my-auto"><a>CONTACTS</a><br><br>
+            <label>Singapore Polytechnic, 500 Dover Road, Singapore</label><br>
+            <label>contactus@sp.edu.sg &nbsp; &nbsp; (+65)6775 1133</label><br>
+            <a href="https://www.facebook.com/singaporepolytechnic/" target="_blank"><img src="../img/facebook.png"
+                    alt=""></a>
+            <!-- source : https://www.flaticon.com/ -->
+            <a href="https://twitter.com/SingaporePoly?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank"><img src="../img/twitter.png" alt=""></a>
+            <!-- source : https://www.flaticon.com/ -->
+            <a href="https://www.instagram.com/singaporepoly/?hl=en" target="_blank"><img src="../img/instagram.png"
+                    alt=""></a><br>
+            <!-- source : https://www.flaticon.com/ -->
+            <label id="arr">@ ALL RIGHTS RESERVED &nbsp; | &nbsp; THE SP EXPERIENCE &nbsp; | &nbsp; SINGAPORE
+                POLYTECHNIC</label>
+        </div>
+    </div>
+</body>
+
+</html>

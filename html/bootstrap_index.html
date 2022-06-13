@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        CA2
+        Author: Isaac Peh
+        Date: 6 August 2021
+
+        Filename: bootstrap_index.html
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Singapore Polytechnic, SP, SP experience, SP enrollment" />
+    <!--keywords for search engine-->
+    <title>Experience SP</title>
+    <link href="../bootstrap_css/bootstrap_layout.css" rel="stylesheet" />
+    <link href="../bootstrap_css/bootstrap_index.css" rel="stylesheet" />
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-900.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-800.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-regular.woff2" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper/min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap_animation.js"></script>
+
+        <!-- navigation bar -->
+
+        <div class="navbar-inner">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <span onclick="transitionToPage('index.html')"><a href="bootstrap_index.html" class="navbar-brand"><img
+                            id="navbar-logo" src="../img/logo.png" alt=""></a></span>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"><img id="toggleimg" src="../img/toggle.png" alt=""></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_index.html')"
+                                id="navHome">Home</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_current_experience.html')"
+                                id="navCurrent">SP Experience</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_course_details.html')"
+                                id="navCareer">Course
+                                Details</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_past_experience.html')"
+                                id="navPast">Past
+                                Experience</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_feedback.html')"
+                                id="navFeedback">Feedback</span></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- intro -->
+
+    <div class="container-fluid p-0" id="indexbg-container">
+        <div class="row no-gutters">
+            <div class="col" id="main-header-text">
+                <h2>Welcome to the <a href="http://sp.edu.sg" target="_blank" id="sptext"
+                        title="http://sp.edu.sg"><br>SP</a>
+                    experience!</h2>
+                <p>While you're here, i'll be sharing some of my past and current experiences<br>as well as what to
+                    expect
+                    here as a student of Singapore Polytechnic</p>
+                <a id="button" onclick="transitionToPage('bootstrap_current_experience.html')">Experience Now!</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+
+    <div class="container-fluid p-0">
+        <div class="row no-gutters hideme">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <img id="aboutme-photo" class="d-block img-fluid rounded-circle" src="../img/aboutmephoto.jpg" alt="" />
+            </div>
+            <div class="col-lg-6 my-auto" id="aboutme-text">
+                <h2>Hi!</h2>
+                <h3>I'm Isaac</h3>
+                <label>Currently a first year student pursuing my Diploma in Information and Technology. I’ve always
+                    been
+                    passionate about programming. I see myself as a relentless and meticulous problem solver, always
+                    looking
+                    for new challenges. I can be a great team player as well as team leader. I believe doing my best and
+                    taking pride in my work are the key factors to success. I have completed National Service which made
+                    a
+                    great improvement in my personality.</label>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <!-- Interests Section -->
+
+        <div class="row no-gutters hideme" id="interest-container">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 my-auto" id="interest-text">
+                <h3>WORK HARD, PLAY HARD</h3>
+                I believe in the importance of work-life harmony, such that I am able to integrate my interests and
+                academic
+                life together. Besides my passion in tech, i also love doing what makes me happy. I don't only like
+                doing
+                work but also :<br><br>
+                <ul>
+                    <li><a id="default" href="javascript:void(0)" onclick="changeImage(1)">Touring on my
+                            motorcycle</a></li>
+                    <li><a href="javascript:void(0)" onclick="changeImage(2)">Travelling around the world</a></li>
+                    <li><a href="javascript:void(0)" onclick="changeImage(3)">Photography</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <img id="interest-photo" class="d-block img-fluid rounded-circle" src="../img/mcycle.jpg" alt="" />
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <!-- Values Section -->
+
+        <div class="row no-gutters hideme">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <img id="values-photo" class="d-block img-fluid rounded-circle" src="../img/values.jpg" alt="" />
+            </div>
+            <div class="col-lg-6 my-auto" id="values-text">
+                <h3>MY PERSONAL VALUES</h3>
+                <label>My motivation in life are outcomes as well as their journeys. I find that both are equally
+                    important,
+                    as i believe that the process is a learning opportunity and exposure for me. I love finding
+                    innovative
+                    ways to complete my tasks, which helps me stay away from a mundane routine.<br></label>
+            </div>
+            <div class="col-lg-1"></div>
+
+            <!-- footer -->
+
+            <div class="row no-gutters" id="footer">
+                <div class="col-lg-12 my-auto"><a>CONTACTS</a><br><br>
+                    <label>Singapore Polytechnic, 500 Dover Road, Singapore</label><br>
+                    <label>contactus@sp.edu.sg &nbsp; &nbsp; (+65)6775 1133</label><br>
+                    <a href="https://www.facebook.com/singaporepolytechnic/" target="_blank"><img
+                            src="../img/facebook.png" alt=""></a>
+                    <!-- source : https://www.flaticon.com/ -->
+                    <a href="https://twitter.com/SingaporePoly?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank"><img src="../img/twitter.png" alt=""></a>
+                    <!-- source : https://www.flaticon.com/ -->
+                    <a href="https://www.instagram.com/singaporepoly/?hl=en" target="_blank"><img
+                            src="../img/instagram.png" alt=""></a><br>
+                    <!-- source : https://www.flaticon.com/ -->
+                    <label id="arr">@ ALL RIGHTS RESERVED &nbsp; | &nbsp; THE SP EXPERIENCE &nbsp; | &nbsp; SINGAPORE
+                        POLYTECHNIC</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

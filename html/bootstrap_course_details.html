@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        CA2
+        Author: Isaac Peh
+        Date: 6 August 2021
+
+        Filename: bootstrap_course_details.html
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Singapore Polytechnic, SP, SP experience, SP enrollment" />
+    <!--keywords for search engine-->
+    <title>Experience SP</title>
+    <link href="../bootstrap_css/bootstrap_layout.css" rel="stylesheet" />
+    <link href="../bootstrap_css/bootstrap_course.css" rel="stylesheet" />
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-900.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-800.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/raleway-v19-latin-regular.woff2" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper/min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap_animation.js"></script>
+
+        <!-- navigation bar -->
+
+        <div class="navbar-inner">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <span onclick="transitionToPage('index.html')"><a href="bootstrap_index.html" class="navbar-brand"><img
+                            id="navbar-logo" src="../img/logo.png" alt=""></a></span>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"><img id="toggleimg" src="../img/toggle.png" alt=""></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_index.html')"
+                                id="navHome">Home</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_current_experience.html')"
+                                id="navCurrent">SP Experience</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_course_details.html')"
+                                id="navCareer">Course
+                                Details</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_past_experience.html')"
+                                id="navPast">Past
+                                Experience</span></li>
+                        <li class="nav-item"><span onclick="transitionToPage('bootstrap_feedback.html')"
+                                id="navFeedback">Feedback</span></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- header title -->
+
+        <div class="row no-gutters">
+            <div class="col">
+                <div id="bgheader">
+                    <h1>Course Details</h1>
+                    <label>More about Diploma in Information Technology (DIT) and where it can lead you</label>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- intro -->
+
+    <div class="container-fluid p-0 intro">
+        <div class="row no-gutters">
+            <div class="col-lg-7 p-2">
+                <label><br><a>Diploma in Information Technology</a><br><br>
+                    If you enjoying programming or building websites, this it the path for you! Diploma in Information
+                    Technology(DIT) is a course focused on Software and Application development. And as student of DIT,
+                    you
+                    won't only learn programming, but also problem-solving and communication skills.<br><br> You'll be
+                    able to
+                    choose based on your interest from one of the three available specialist tracks in your second year,
+                    Software Development, User Experience(UX) Design or Immersive Simulation.<br><br>
+                    The section below shows a brief explanation of the modules i am currently taking as a first year
+                    student in
+                    DIT. </label>
+            </div>
+            <div class="col-lg-5 my-auto">
+                <img class="img-fluid" src="../img/dit.png" alt="">
+                <!-- source : https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology/overview -->
+            </div>
+        </div>
+    </div>
+
+    <!-- modules -->
+
+    <div class="container-fluid p-0" id="mods">
+        <div class="row mx-auto" id="container">
+            <div class="col-xl-4 col-lg-6 newcol px-4">
+                <img src="../img/fop.png" alt="" />
+                <!-- source : https://www.flaticon.com/ -->
+                <label class="title">Fundamentals Of Programming</label><br><br>
+                <label class="content">This module teaches you the fundamentals of Javascript, from logic to classes!
+                    Expect yourself to be able to script our your own little program after completing this
+                    module.></label>
+            </div>
+            <div class="col-xl-4 col-lg-6 newcol px-4">
+                <img src="../img/foc.png" alt="">
+                <!-- source : https://www.flaticon.com/ -->
+                <label class="title">Fundamentals Of Computing</label><br><br>
+                <label class="content">Fundamentals of Computing is a module that teaches you how computers work
+                    internally, how to convert from binary to decimals, and even scratches the surface of networking
+                    devices!></label>
+            </div>
+            <div class="col-xl-4 col-lg-6 newcol px-4">
+                <img src="../img/fed.png" alt="">
+                <!-- source : https://www.flaticon.com/ -->
+                <label class="title">Front-End Web Development</label><br><br>
+                <label class="content">If you enjoy building websites from scratch, you'll enjoy this module. With HTML,
+                    CSS and even Bootstrap, you'll be able to build your very own website from scratch such as the one
+                    you're viewing now.</label>
+            </div>
+            <div class="col-xl-4 col-lg-6 newcol px-4">
+                <img src="../img/cat.png" alt="">
+                <!-- source : https://www.flaticon.com/ -->
+                <label class="title">Critical and Analytical Thinking</label><br><br>
+                <label class="content">Critical and Analytical Thinking trains you to analyze and research on your
+                    sources
+                    accurately before we start believing whatever we read or hear online. It's important not to spread
+                    'fake news' around without knowing the facts.</label>
+            </div>
+            <div class="col-xl-4 col-lg-6 newcol px-4">
+                <img src="../img/cpr.png" alt="">
+                <!-- source : https://www.flaticon.com/ -->
+                <label class="title" style="font-size:15px;">Communication (Project Effectiveness)</label><br><br>
+                <label class="content">If you're coming from your O' or A' levels, this might be something new to you.
+                    This module teaches us how to write proposals, report, present and cite our sources accurately! The
+                    skills you will need throughout your life.</label>
+            </div>
+            <div class="col-xl-4 col-lg-6 newcol px-4">
+                <img src="../img/math.png" alt="">
+                <!-- source : https://www.flaticon.com/ -->
+                <label class="title" id="math">Mathematics</label><br><br>
+                <label class="content">Math. You either love it or hate it. This module aims to equip you with knowledge
+                    in
+                    mathematics and analytical skills to solve problems related to information technology. From Matrices
+                    to even Probabilities.</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- fixed background -->
+
+    <div id="bg">
+    </div>
+
+    <!-- career prospects -->
+
+    <div id="career">
+        <label><a>Career Prospect</a>
+            <br>
+            <br>
+            With 3 specialisations in SoC’s DIT, there are many career prospects for aspiring SoC diploma holders. From
+            Artificial Intelligence to UI/UX Design, deep-dive into where your heart lies in the world of technology in
+            your 2nd year of DIT. Here's some insight of the many careers you can expect to pursue after you graduate:
+        </label>
+    </div>
+
+    <!-- job tiles -->
+
+    <div class="row mx-auto" id="tilescontainer">
+        <div class="col m-3 squares" id="gamedev">
+            <a href="https://www.monster.com/career-advice/article/Career-Spotlight-Game-Programmer"
+                target="_blank">Games Programmer</a>
+        </div>
+        <div class="col m-3 squares" id="softdev">
+            <a href="https://www.careerexplorer.com/careers/app-developer/" target="_blank">Applications Developer</a>
+        </div>
+        <div class="col m-3 squares" id="softeng">
+            <a href="https://www.careerexplorer.com/careers/software-engineer/" target="_blank">Software Engineer</a>
+        </div>
+        <div class="col m-3 squares" id="uiuxdev"><a
+                href="https://www.springboard.com/library/ui-ux-design/job-description/" target="_blank">UI/UX
+                Designer</a>
+        </div>
+        <div class="col m-3 squares" id="webdev">
+            <a href="https://www.careerexplorer.com/careers/web-developer/" target="_blank">Web Developer</a>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+    <div class="row no-gutters" id="footer">
+        <div class="col-lg-12 my-auto"><a>CONTACTS</a><br><br>
+            <label>Singapore Polytechnic, 500 Dover Road, Singapore</label><br>
+            <label>contactus@sp.edu.sg &nbsp; &nbsp; (+65)6775 1133</label><br>
+            <a href="https://www.facebook.com/singaporepolytechnic/" target="_blank"><img src="../img/facebook.png"
+                    alt=""></a>
+            <!-- source : https://www.flaticon.com/ -->
+            <a href="https://twitter.com/SingaporePoly?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank"><img src="../img/twitter.png" alt=""></a>
+            <!-- source : https://www.flaticon.com/ -->
+            <a href="https://www.instagram.com/singaporepoly/?hl=en" target="_blank"><img src="../img/instagram.png"
+                    alt=""></a><br>
+            <!-- source : https://www.flaticon.com/ -->
+            <label id="arr">@ ALL RIGHTS RESERVED &nbsp; | &nbsp; THE SP EXPERIENCE &nbsp; | &nbsp; SINGAPORE
+                POLYTECHNIC</label>
+        </div>
+    </div>
+</body>
+
+</html>

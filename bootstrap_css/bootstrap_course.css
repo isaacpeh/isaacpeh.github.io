@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/* 
+CA2
+Author: Isaac Peh
+Date: 6 August 2021
+
+Filename: bootstrap_course.css 
+*/
+
+/* navigation */
+
+#navCareer {
+    color: white !important;
+    background-color: crimson;
+    border: crimson solid 1px;
+}
+
+#navHome:hover, #navCurrent:hover, #navPast:hover, #navFeedback:hover {
+    color: red !important;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+/* intro DIT */
+
+.intro img {
+    width: 520px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.intro a {
+    /* title */
+    color: black !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 15px;
+    line-height: 60px;
+    border-bottom: crimson solid 2px;
+}
+
+.intro label {
+    /* content */
+    color: rgb(88, 88, 88);
+    font-size: 18px;
+    margin-top: 60px;
+    margin-left: 140px;
+    margin-right: 120px;
+    line-height: 34px;
+}
+
+/* modules */
+
+#mods {
+    background-color: rgb(241, 241, 241);
+    padding-top: 10px !important;
+}
+
+#mods img {
+    width: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+#container {
+    width: 84%;
+}
+
+.title {
+    /* title */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    padding-top: 60px;
+    padding-bottom: 14px;
+    border-bottom: crimson solid 2px;
+}
+
+.content {
+    /* content */
+    font-size: 14px;
+    padding-bottom: 40px !important;
+    line-height: 24px;
+}
+
+#math {
+    padding-right: 130px;
+}
+
+/* fixed bg */
+
+#bg {
+    background-image: url('../img/ditbg.jpg');
+    /* source : https://blog.yeswehack.com/talent-development/singapore-polytechnic-partners-with-yeswehack-to-hold-its-first-ever-bug-bounty-event/ */
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 90px;
+}
+
+/* career */
+
+#career {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#career a {
+    /* title */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+    padding-bottom: 15px;
+    border-bottom: crimson solid 2px;
+}
+
+#career label {
+    /* content */
+    color: rgb(88, 88, 88);
+    font-size: 18px;
+    margin-left: 140px;
+    margin-right: 120px;
+    line-height: 34px;
+}
+
+/* job tiles */
+
+#tilescontainer {
+    width: 80%;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.squares {
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    min-width: 200px !important;
+    min-height: 200px !important;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: ease 0.3s;
+}
+
+.squares a {
+    color: white;
+    text-decoration: none !important;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.squares a:hover {
+    color: white;
+}
+
+.squares:hover {
+    color: white;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.6);
+    transform: translate(0px, 8px);
+}
+
+#gamedev {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/games.JPG);
+    /* source : https://cutt.ly/Anhi4C1 */
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+}
+
+#softdev {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/appdev.jpeg);
+    /* source : https://cutt.ly/2nhWmWa */
+    background-size: cover;
+    background-position: center;
+}
+
+#softeng {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/engineer.jpg);
+    /* source : https://bit.ly/2R8KSVA */
+    background-size: cover;
+    background-position: center;
+}
+
+#uiuxdev {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/uiux.jpg);
+    /* source : https://cutt.ly/Cnhi1qB */
+    background-size: cover;
+    background-position: center;
+}
+
+#webdev {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/web.jpg);
+    /* source : https://bit.ly/3i78cOE */
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .intro {
+        text-align: center;
+    }
+    .intro a, .intro label, #career label {
+        margin: 30px;
+    }
+    .intro a, #career a {
+        width: 70%;
+        margin: 0px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .intro img {
+        width: 70%;
+        margin: 30px auto;
+    }
+    #tilescontainer {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    #bg {
+        margin-bottom: 20px;
+    }
+}

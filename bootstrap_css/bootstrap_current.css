@@ -1,0 +1,371 @@
+@charset "utf-8";
+
+/* 
+CA2
+Author: Isaac Peh
+Date: 6 August 2021
+
+Filename: bootstrap_current.css 
+*/
+
+/* navigation */
+
+#navCurrent{
+    color: white !important;
+    background-color: crimson;
+    border: crimson solid 1px;
+}
+
+#navHome:hover, #navCareer:hover, #navPast:hover, #navFeedback:hover{
+    color: red !important;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+/* fixed bg */
+
+#bg {
+    background-image: url('../img/spexperiencebg.jpg');
+    /* source : https://www.sp.edu.sg/ */
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 70vh;
+}
+
+/* SP experience */
+
+#intro {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+#intro img {
+    margin-top: 30px;
+}
+
+#intro a {
+    /* title */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+    padding-bottom: 15px;
+    line-height: 60px;
+    border-bottom: crimson solid 2px;
+}
+
+#intro label {
+    /* content */
+    color: rgb(88, 88, 88);
+    font-size: 18px;
+    margin-right: 120px;
+    line-height: 34px;
+    margin-left: 50px;
+}
+
+/* SOC experience    */
+
+#socex {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#socex iframe {
+    /* video */
+    width:100%; 
+    height:315px;
+    margin-left: 140px;
+    margin-top: 60px;
+    border: none;
+}
+
+#socex label {
+    /* title */
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    border-bottom: crimson solid 2px;
+    width: 28%;
+}
+
+#socex p {
+    /* content */
+    color: rgb(88, 88, 88);
+    font-size: 18px;
+    margin-top: 60px;
+    margin-left: 280px;
+    line-height: 34px;
+}
+
+/* grid */
+
+#gridcaption {
+    /* title */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: crimson solid 2px;
+    text-align: center;
+    width: 30%;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 26px;
+}
+
+#subcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.newcol{
+    padding-top: 30px;
+}
+
+.flavour, .friend, .fun {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-radius: 2%;
+}
+
+.gridtitle {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+
+#gridtable {
+    margin-top: 30px;
+}
+
+/* grid - flavours */
+
+#flavours1, #flavours3 {
+    color: rgba(255, 255, 255, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    line-height: 24px;
+}
+
+#flavours1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/flavours1.jpg);
+    /* source : https://www.instagram.com/spfoodreviewv2/?hl=en*/
+    background-size: cover;
+    transition: ease 0.3s;
+    padding-top: 70px;
+}
+
+#flavours2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/flavours2.jpg);
+    /* source : https://www.instagram.com/spfoodreviewv2/?hl=en*/
+    background-size: cover;
+    transition: ease 0.3s;
+    padding-top: 125px;
+}
+
+#flavours3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/flavours3.jpg);
+    /* source : https://www.instagram.com/spfoodreviewv2/?hl=en*/
+    background-size: cover;
+    transition: ease 0.4s;
+    padding-top: 40px;
+}
+
+#flavours1:hover {
+    color: white;
+    text-shadow: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/flavours1.jpg);
+    /* source : https://www.instagram.com/spfoodreviewv2/?hl=en*/
+    background-size: cover;
+}
+
+#flavours2:hover {
+    color: rgba(255, 255, 255, 0.3);
+    text-shadow: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../img/flavours2.jpg);
+    /* source : https://www.instagram.com/spfoodreviewv2/?hl=en*/
+    background-size: cover;
+}
+
+#flavours3:hover {
+    color: white;
+    text-shadow: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/flavours3.jpg);
+    /* source : https://www.instagram.com/spfoodreviewv2/?hl=en*/
+    background-size: cover;
+}
+
+/* grid - friends */
+
+#friends1, #friends3 {
+    color: rgba(255, 255, 255, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    line-height: 24px;
+}
+
+#friends1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/friends1.jpg);
+    /* source : from a friend with their permission */
+    background-size: cover;
+    transition: ease 0.3s;
+    padding-top: 70px;
+}
+
+#friends2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/friends2.png);
+    /* source : from a friend with their permission */
+    background-size: cover;
+    transition: ease 0.3s;
+    padding-top: 125px;
+}
+
+#friends3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/friends3.PNG);
+    /* source : from a friend with their permission */
+    background-size: cover;
+    transition: ease 0.3s;
+    padding-top: 70px;
+}
+
+#friends1:hover {
+    color: white;
+    text-shadow: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/friends1.jpg);
+    /* source : from a friend with their permission */
+    background-size: cover;
+}
+
+#friends2:hover {
+    color: rgba(255, 255, 255, 0.3);
+    text-shadow: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../img/friends2.png);
+    /* source : from a friend with their permission */
+    background-size: cover;
+}
+
+#friends3:hover {
+    color: white;
+    text-shadow: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/friends3.PNG);
+    /* source : from a friend with their permission */
+    background-size: cover;
+}
+
+/* grid - fun */
+
+#fun1, #fun3 {
+    color: rgba(255, 255, 255, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    line-height: 24px;
+}
+
+#fun1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/fun1.jpg);
+    /* source : from a friend with their permission */
+    background-size: cover;
+    transition: ease 0.3s;
+    padding-top: 45px;
+}
+
+#fun2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/fun2.jpg);
+    /* source : from a friend with their permission */
+    background-size: cover;
+    transition: ease 0.3s;
+    padding-top: 125px;
+}
+
+#fun3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/fun3.jpg);
+    /* source : from a friend with their permission */
+    background-size: cover;
+    transition: ease 0.3s;
+    padding-top: 45px;
+}
+
+#fun1:hover {
+    color: white;
+    text-shadow: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fun1.jpg);
+    /* source : https://life.sp.edu.sg/our-events/cca-carnivals/ */
+    background-size: cover;
+}
+
+#fun2:hover {
+    color: rgba(255, 255, 255, 0.3);
+    text-shadow: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../img/fun2.jpg);
+    /* source : https://www.facebook.com/officialspdmitclub/ */
+    background-size: cover;
+}
+
+#fun3:hover {
+    color: white;
+    text-shadow: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fun3.jpg);
+    /* source : https://bit.ly/3c2psk9 */
+    background-size: cover;
+}
+
+/* footer */
+
+#footer {
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 992px) {
+    #intro, #socex{
+        text-align: center;
+    }
+    #intro img{
+        width: 80%;
+        margin: 0px;
+    }
+    #intro a, #socex label, #gridcaption {
+        /* title */
+        width:70%;
+        padding-bottom: 10px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    #socex label{
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    #gridcaption{
+        line-height: 16px
+    }
+    #intro label, #socex p{
+        /* content */
+        font-size: 18px;
+        margin: 0px 40px;
+    }
+    #socex iframe{
+        margin: 10px 0px;
+        margin-bottom: 0px;
+        max-width: 80%
+    }
+    #socex p{
+        margin-top: 40px;
+    }
+}
